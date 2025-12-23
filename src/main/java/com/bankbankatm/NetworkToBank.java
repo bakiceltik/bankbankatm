@@ -1,5 +1,7 @@
 package com.bankbankatm;
 
+import java.net.InetAddress;
+
 public class NetworkToBank {
 
 	private Log log;

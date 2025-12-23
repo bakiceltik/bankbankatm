@@ -3,10 +3,10 @@ package com.bankbankatm;
 public class Person {
 
 	private String givenName;
-	private string middleName;
-	private string familyName;
+	private String middleName;
+	private String familyName;
 	private int gender;
-	private string homeAddress;
+	private String homeAddress;
 	private int phoneNumber;
 
 }

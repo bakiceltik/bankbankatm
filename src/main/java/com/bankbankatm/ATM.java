@@ -10,7 +10,7 @@ public class ATM {
 	 * 
 	 * @param password
 	 */
-	public string verify(string password) {
+	public String verify(String password) {
 		// TODO - implement ATM.verify
 		throw new UnsupportedOperationException();
 	}
