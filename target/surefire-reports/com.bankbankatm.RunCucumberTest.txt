@@ -1,4 +1,53 @@
 -------------------------------------------------------------------------------
 Test set: com.bankbankatm.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s -- in com.bankbankatm.RunCucumberTest
+Tests run: 29, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.412 s <<< FAILURE! -- in com.bankbankatm.RunCucumberTest
+ATM Authentication.Successful login with valid card and PIN -- Time elapsed: 0.044 s <<< FAILURE!
+java.lang.AssertionError: PIN should be correct
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.i_enter_the_correct_pin(StepDefinitions.java:38)
+	at ✽.I enter the correct PIN "1234"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:13)
+
+ATM Authentication.PIN entry timeout -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: Card should be ejected
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card(StepDefinitions.java:70)
+	at ✽.the system should eject the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:27)
+
+ATM Authentication.Login with invalid card (expired or unreadable) -- Time elapsed: 0.016 s <<< FAILURE!
+java.lang.AssertionError: Card should be ejected
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card_immediately(StepDefinitions.java:90)
+	at ✽.the system should eject the card immediately(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:33)
+
+ATM Authentication.Login with incorrect PIN -- Time elapsed: 0.006 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Invalid PIN]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.bankbankatm.StepDefinitions.i_should_see_an_error_message(StepDefinitions.java:97)
+	at ✽.I should see an error message "Invalid PIN, please try again"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:40)
+
+ATM Authentication.Account lockout after 3 incorrect PIN attempts -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: Card should be retained
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.the_system_should_retain_the_card(StepDefinitions.java:130)
+	at ✽.the system should retain the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:47)
+
+System Performance and Timing Constraints.Session timeout due to user inactivity -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: Card should be retained
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.the_system_should_retain_the_card(StepDefinitions.java:130)
+	at ✽.the system should retain the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:12)
+
+System Performance and Timing Constraints.Bank server response timeout -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: Card should be ejected
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card(StepDefinitions.java:70)
+	at ✽.the system should eject the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:29)
+

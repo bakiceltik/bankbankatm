@@ -10,33 +10,93 @@ public class ATM {
 	 * 
 	 * @param password
 	 */
-	public String verify(String password) {
-		// TODO - implement ATM.verify
-		throw new UnsupportedOperationException();
+	private DatabaseProxy dbProxy;
+
+	public ATM(DatabaseProxy dbProxy) {
+		this.dbProxy = dbProxy;
 	}
 
-	/**
-	 * 
-	 * @param accountNum
-	 */
-	public void readAccountNum(int accountNum) {
-		// TODO - implement ATM.readAccountNum
-		throw new UnsupportedOperationException();
+	public void insertCard(int accountNum) {
+		// Stub: do nothing
 	}
 
-	public Message checkAvailabilityOfCashInATM() {
-		// TODO - implement ATM.checkAvailabilityOfCashInATM
-		throw new UnsupportedOperationException();
+	public boolean withdraw(double amount) {
+		// Stub: always fail
+		return false;
 	}
 
-	public Message verifyInputAmount() {
-		// TODO - implement ATM.verifyInputAmount
-		throw new UnsupportedOperationException();
+	public double getBalance() {
+		// Stub: always return 0.0 or -1.0
+		return 0.0;
 	}
 
-	public Time checkTime() {
-		// TODO - implement ATM.checkTime
-		throw new UnsupportedOperationException();
+	public boolean deposit(double amount) {
+		// Stub: always fail
+		return false;
+	}
+
+	public boolean validateCurrency() {
+		return false;
+	}
+
+	public boolean transfer(String targetAccountNum, double amount) {
+		return false;
+	}
+
+	public boolean checkAccountExists(String accountNum) {
+		return false;
+	}
+
+	public String getRecentTransactions(int count) {
+		return "";
+	}
+
+	public boolean changePin(String oldPin, String newPin) {
+		return false;
+	}
+
+	// Hardware / Reliability stubs
+	public boolean isDepositSlotOpen() {
+		return false;
+	}
+
+	public void closeDepositSlot() {
+	}
+
+	public void openDepositSlot() {
+	}
+
+	public double getDispensedCash() {
+		return 0.0;
+	}
+
+	public void reset() {
+	}
+
+	public boolean enterPin(String pin) {
+		// Stub: always fail
+		return false;
+	}
+
+	public String getMessage() {
+		// Stub: return empty or default
+		return "";
+	}
+
+	public void ejectCard() {
+		// Stub: do nothing
+	}
+
+	public void retainCard() {
+		// Stub: do nothing
+	}
+
+	public boolean isCardEjected() {
+		return false;
+	}
+
+	public boolean isCardRetained() {
+		return false;
 	}
 
 }
