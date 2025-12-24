@@ -1,53 +1,53 @@
 -------------------------------------------------------------------------------
 Test set: com.bankbankatm.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.412 s <<< FAILURE! -- in com.bankbankatm.RunCucumberTest
-ATM Authentication.Successful login with valid card and PIN -- Time elapsed: 0.044 s <<< FAILURE!
-java.lang.AssertionError: PIN should be correct
+Tests run: 29, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.449 s <<< FAILURE! -- in com.bankbankatm.RunCucumberTest
+ATM Authentication.Login with incorrect PIN -- Time elapsed: 0.007 s <<< FAILURE!
+java.lang.AssertionError: PIN should be incorrect
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.i_enter_the_correct_pin(StepDefinitions.java:38)
-	at ✽.I enter the correct PIN "1234"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:13)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.bankbankatm.StepDefinitions.i_enter_an_incorrect_pin(StepDefinitions.java:105)
+	at ✽.I enter an incorrect PIN "0000"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:39)
 
-ATM Authentication.PIN entry timeout -- Time elapsed: 0.003 s <<< FAILURE!
-java.lang.AssertionError: Card should be ejected
+Change Password.Successfully change PIN -- Time elapsed: 0.015 s <<< FAILURE!
+java.lang.AssertionError: Message should contain: Password Changed Successfully
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card(StepDefinitions.java:70)
-	at ✽.the system should eject the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:27)
+	at com.bankbankatm.StepDefinitions.i_should_see_a_message_generic(StepDefinitions.java:811)
+	at ✽.I should see a "Password Changed Successfully" message(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:17)
 
-ATM Authentication.Login with invalid card (expired or unreadable) -- Time elapsed: 0.016 s <<< FAILURE!
-java.lang.AssertionError: Card should be ejected
+Cash Deposit.Successful cash deposit -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: expected:<1500.0> but was:<1000.0>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
+	at ✽.my account balance should be updated to 1500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:18)
+
+System Reliability and Hardware Safety.Cash Denomination Recognition -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: Dispensed amount matches requested
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card_immediately(StepDefinitions.java:90)
-	at ✽.the system should eject the card immediately(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:33)
+	at com.bankbankatm.StepDefinitions.the_machine_must_accurately_identify_and_select_worth_of_bills(StepDefinitions.java:490)
+	at ✽.the machine must accurately identify and select 100.00 worth of bills(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:29)
 
-ATM Authentication.Login with incorrect PIN -- Time elapsed: 0.006 s <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[Invalid PIN]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.bankbankatm.StepDefinitions.i_should_see_an_error_message(StepDefinitions.java:97)
-	at ✽.I should see an error message "Invalid PIN, please try again"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:40)
-
-ATM Authentication.Account lockout after 3 incorrect PIN attempts -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: Card should be retained
+Money Transfer.Successful money transfer to valid account -- Time elapsed: 0.007 s <<< FAILURE!
+java.lang.AssertionError: expected:<1500.0> but was:<1000.0>
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_system_should_retain_the_card(StepDefinitions.java:130)
-	at ✽.the system should retain the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:47)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
+	at ✽.my account balance should be updated to 1500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:17)
 
-System Performance and Timing Constraints.Session timeout due to user inactivity -- Time elapsed: 0.003 s <<< FAILURE!
-java.lang.AssertionError: Card should be retained
+Cash Withdrawal.Successful cash withdrawal -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: expected:<800.0> but was:<1000.0>
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_system_should_retain_the_card(StepDefinitions.java:130)
-	at ✽.the system should retain the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:12)
-
-System Performance and Timing Constraints.Bank server response timeout -- Time elapsed: 0.004 s <<< FAILURE!
-java.lang.AssertionError: Card should be ejected
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_system_should_eject_the_card(StepDefinitions.java:70)
-	at ✽.the system should eject the card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:29)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:685)
+	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
+	at ✽.my account balance should be updated to 800.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:19)
 
