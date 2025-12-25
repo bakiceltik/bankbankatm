@@ -8,27 +8,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.But;
 import static org.junit.Assert.*;
 
-/**
- * Step definitions for BankBankATM Cucumber tests.
- * 
- * TDD Red State: All tests should FAIL initially because the original
- * classes throw UnsupportedOperationException. Tests will pass (Green)
- * once the actual implementation is written.
- * 
- * Original Classes Used:
- * - ATM: verify(), readAccountNum(), checkAvailabilityOfCashInATM(),
- * verifyInputAmount(), checkTime()
- * - DatabaseProxy: selectPasswordByAccountNum(), minusBalance(), plusBalance(),
- * createNewAccount(), checkTheBalance()
- * - CardReader: readCard(), ejectCard(), retainCard()
- * - CashDispenser: setInitialCash(), checkCashOnHand(), dispenseCash()
- * - Withdrawal: getSpecificsFromCustomer(), completeTransaction()
- * - Deposit: getSpecificsFromCustomer(), completeTransaction()
- * - Transfer: getSpecificsFromCustomer(), completeTransaction()
- * - Inquiry: getSpecificsFromCustomer(), completeTransaction()
- * - Display: display(), readPIN(), readMenuChoice(), readAmount()
- * - Log: logSend(), logResponse(), logCashDispensed()
- */
 public class StepDefinitions {
 
     // Core Components
