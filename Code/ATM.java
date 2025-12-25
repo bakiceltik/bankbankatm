@@ -1,5 +1,3 @@
-package com.bankbankatm;
-
 public class ATM {
 
 	private int minimumAmount;

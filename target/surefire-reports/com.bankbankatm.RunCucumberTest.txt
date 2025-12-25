@@ -1,53 +1,239 @@
 -------------------------------------------------------------------------------
 Test set: com.bankbankatm.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.449 s <<< FAILURE! -- in com.bankbankatm.RunCucumberTest
-ATM Authentication.Login with incorrect PIN -- Time elapsed: 0.007 s <<< FAILURE!
-java.lang.AssertionError: PIN should be incorrect
+Tests run: 35, Failures: 35, Errors: 0, Skipped: 0, Time elapsed: 0.400 s <<< FAILURE! -- in com.bankbankatm.RunCucumberTest
+ATM Authentication.Successful login with valid card and PIN -- Time elapsed: 0.057 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at com.bankbankatm.StepDefinitions.i_enter_an_incorrect_pin(StepDefinitions.java:105)
-	at ✽.I enter an incorrect PIN "0000"(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:39)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 
-Change Password.Successfully change PIN -- Time elapsed: 0.015 s <<< FAILURE!
-java.lang.AssertionError: Message should contain: Password Changed Successfully
+ATM Authentication.PIN entry timeout -- Time elapsed: 0.006 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.i_should_see_a_message_generic(StepDefinitions.java:811)
-	at ✽.I should see a "Password Changed Successfully" message(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:17)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 
-Cash Deposit.Successful cash deposit -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: expected:<1500.0> but was:<1000.0>
+ATM Authentication.Login with invalid card (expired or unreadable) -- Time elapsed: 0.007 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:685)
-	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
-	at ✽.my account balance should be updated to 1500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:18)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 
-System Reliability and Hardware Safety.Cash Denomination Recognition -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: Dispensed amount matches requested
+ATM Authentication.Login with incorrect PIN -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at com.bankbankatm.StepDefinitions.the_machine_must_accurately_identify_and_select_worth_of_bills(StepDefinitions.java:490)
-	at ✽.the machine must accurately identify and select 100.00 worth of bills(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:29)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 
-Money Transfer.Successful money transfer to valid account -- Time elapsed: 0.007 s <<< FAILURE!
-java.lang.AssertionError: expected:<1500.0> but was:<1000.0>
+ATM Authentication.Account lockout after 3 incorrect PIN attempts -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:685)
-	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
-	at ✽.my account balance should be updated to 1500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:17)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 
-Cash Withdrawal.Successful cash withdrawal -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: expected:<800.0> but was:<1000.0>
+Change Password.Successfully change PIN -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:685)
-	at com.bankbankatm.StepDefinitions.my_account_balance_should_be_updated_to_(StepDefinitions.java:597)
-	at ✽.my account balance should be updated to 800.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:19)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
+
+Change Password.Change PIN with incorrect old PIN -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
+
+Change Password.New PIN confirmation mismatch -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
+
+Cash Deposit.Successful cash deposit -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
+
+Cash Deposit.Deposit with invalid currency or unrecognized bills -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
+
+Cash Deposit.User cancels deposit transaction -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
+
+ATM Initialization and Configuration.ATM initialization with parameters -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.i_set_total_fund_to(StepDefinitions.java:688)
+	at ✽.I set total fund (t) to 100000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:15)
+
+ATM Initialization and Configuration.ATM rejects card when cash below minimum threshold -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at ✽.the minimum cash threshold (n) is 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:25)
+
+ATM Initialization and Configuration.ATM displays welcome screen when idle -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: Display.display() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:777)
+	at ✽.the ATM should display the welcome screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:34)
+
+ATM Initialization and Configuration.ATM running out of money rejects transactions -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at ✽.the minimum cash threshold (n) is 500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:41)
+
+ATM Initialization and Configuration.Card serial number is logged on insertion -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:51)
+
+ATM Initialization and Configuration.Each step must be completed within 60 seconds -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.readAccountNum() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:85)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card(StepDefinitions.java:91)
+	at com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card(StepDefinitions.java:829)
+	at ✽.a customer has inserted a card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:59)
+
+Account Inquiry.Check account balance -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
+
+Account Inquiry.View recent transactions -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
+
+System Performance and Timing Constraints.Session timeout due to user inactivity -- Time elapsed: 0.005 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen(StepDefinitions.java:402)
+	at ✽.I am on any transaction screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:9)
+
+System Performance and Timing Constraints.Error message display duration -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: Display.display() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:436)
+	at ✽.the system displays an error message(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:19)
+
+System Performance and Timing Constraints.Bank server response timeout -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction(StepDefinitions.java:448)
+	at ✽.I have initiated a transaction (e.g., withdrawal)(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:26)
+
+System Performance and Timing Constraints.Cash dispensing synchronization -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal(StepDefinitions.java:472)
+	at ✽.I have requested a cash withdrawal(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:35)
+
+System Performance and Timing Constraints.Concurrent transaction handling -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(StepDefinitions.java:512)
+	at ✽.specific bank account "12345" has balance 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:45)
+
+System Reliability and Hardware Safety.Transaction Atomicity on Power Failure -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(StepDefinitions.java:862)
+	at ✽.I have requested a withdrawal of 100.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:9)
+
+System Reliability and Hardware Safety.Data Isolation -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:922)
+	at ✽.two transactions act on the same account simultaneously(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:19)
+
+System Reliability and Hardware Safety.Cash Denomination Recognition -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: CashDispenser not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:960)
+	at ✽.the cash dispenser is loaded with mixed bills(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:27)
+
+System Reliability and Hardware Safety.Hardware Retry Logic (3 attempts) -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: CashDispenser not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error(StepDefinitions.java:979)
+	at ✽.the cash dispenser encounters a mechanical error during operation(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:34)
+
+Money Transfer.Successful money transfer to valid account -- Time elapsed: 0.004 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
+
+Money Transfer.Transfer amount exceeds account balance -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
+
+Money Transfer.Transfer to invalid or non-existent account -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
+
+Cash Withdrawal.Successful cash withdrawal -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
+
+Cash Withdrawal.Withdrawal amount exceeds account balance -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
+
+Cash Withdrawal.Withdrawal amount exceeds per-transaction limit -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
+
+Cash Withdrawal.Withdrawal amount exceeds daily limit -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 

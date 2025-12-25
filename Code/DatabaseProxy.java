@@ -1,12 +1,10 @@
-package com.bankbankatm;
-
 public class DatabaseProxy {
 
 	/**
 	 * 
 	 * @param accountNum
 	 */
-	public String selectPasswordByAccountNum(int accountNum) {
+	public string selectPasswordByAccountNum(int accountNum) {
 		// TODO - implement DatabaseProxy.selectPasswordByAccountNum
 		throw new UnsupportedOperationException();
 	}
