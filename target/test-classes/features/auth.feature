@@ -46,3 +46,20 @@ Feature: ATM Authentication
     When I enter an incorrect PIN "0000" 3 times in a row
     Then the system should retain the card
     And I should see a message "Card retained. Please contact your bank."
+
+  # FR8 - Bad bank code handling
+  @auth @bad_bank_code
+  Scenario: Card from unsupported bank
+    When I insert a card with unsupported bank code "UNKNOWNBANK"
+    Then the bank computer should return "bad bank code"
+    And the system should eject the card
+    And I should see an error message "Bank not supported by this ATM"
+
+  # FR8 - Bad account handling
+  @auth @bad_account
+  Scenario: Card with account problems
+    When I insert a valid card with serial "9999999999"
+    And I enter the correct PIN "1234"
+    And the bank computer returns "bad account"
+    Then the system should eject the card
+    And I should see an error message "Account problem. Please contact your bank."

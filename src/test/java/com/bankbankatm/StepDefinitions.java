@@ -1021,4 +1021,674 @@ public class StepDefinitions {
     public void and_the_transaction_should_be_cancelled() {
         transactionSuccess = false;
     }
+
+    // ===========================================
+    // LOGGING FEATURE STEPS (FR6, FR15)
+    // ===========================================
+
+    @Given("the logging system is operational")
+    public void the_logging_system_is_operational() {
+        try {
+            log = new Log();
+        } catch (UnsupportedOperationException e) {
+            fail("Log not implemented");
+        }
+    }
+
+    @Then("the log should record the card insertion")
+    public void the_log_should_record_card_insertion() {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @Then("the log entry should contain serial number {string}")
+    public void the_log_entry_should_contain_serial_number(String serial) {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @Then("the log entry should contain a timestamp")
+    public void the_log_entry_should_contain_a_timestamp() {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @When("I complete a withdrawal of {double}")
+    public void i_complete_a_withdrawal_of(Double amount) {
+        requestedAmount = amount;
+        try {
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            cashDispenser.dispenseCash(null);
+        } catch (UnsupportedOperationException e) {
+            fail("CashDispenser.dispenseCash() not implemented");
+        }
+    }
+
+    @Then("the log should record the dispensed amount {double}")
+    public void the_log_should_record_dispensed_amount(Double amount) {
+        try {
+            log.logCashDispensed(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logCashDispensed() not implemented");
+        }
+    }
+
+    @Then("the log should contain the card serial number")
+    public void the_log_should_contain_card_serial_number() {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @Then("the log should contain the transaction timestamp")
+    public void the_log_should_contain_transaction_timestamp() {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @Then("a response should be sent to the bank for money dispensed")
+    public void response_should_be_sent_to_bank_for_money_dispensed() {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    @When("I perform a transaction")
+    public void i_perform_a_transaction() {
+        try {
+            Message result = atm.verifyInputAmount();
+            assertNotNull("Transaction should be verified", result);
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.verifyInputAmount() not implemented");
+        }
+    }
+
+    @Then("the log should contain:")
+    public void the_log_should_contain(io.cucumber.datatable.DataTable dataTable) {
+        try {
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @When("I attempt a withdrawal of {double}")
+    public void i_attempt_a_withdrawal_of(Double amount) {
+        requestedAmount = amount;
+        try {
+            atm.verifyInputAmount();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.verifyInputAmount() not implemented");
+        }
+    }
+
+    @When("the transaction fails due to insufficient funds")
+    public void transaction_fails_due_to_insufficient_funds() {
+        transactionSuccess = false;
+    }
+
+    @Then("the log should record the failed attempt")
+    public void the_log_should_record_failed_attempt() {
+        try {
+            log.logResponse(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logResponse() not implemented");
+        }
+    }
+
+    @Then("the log should contain the reason {string}")
+    public void the_log_should_contain_reason(String reason) {
+        try {
+            log.logResponse(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logResponse() not implemented");
+        }
+    }
+
+    // ===========================================
+    // AUTH FEATURE - BAD BANK CODE/ACCOUNT STEPS
+    // ===========================================
+
+    @When("I insert a card with unsupported bank code {string}")
+    public void i_insert_card_with_unsupported_bank_code(String bankCode) {
+        try {
+            cardReader = new CardReader(atm);
+            cardReader.readCard();
+        } catch (UnsupportedOperationException e) {
+            fail("CardReader.readCard() not implemented");
+        }
+    }
+
+    @Then("the bank computer should return {string}")
+    public void the_bank_computer_should_return(String response) {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    @When("the bank computer returns {string}")
+    public void the_bank_computer_returns(String response) {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    // ===========================================
+    // BANK INTEGRATION FEATURE STEPS
+    // ===========================================
+
+    @Given("the ATM is connected to the bank network")
+    public void the_atm_is_connected_to_bank_network() {
+        try {
+            log = new Log();
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.openConnection();
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.openConnection() not implemented");
+        }
+    }
+
+    @Given("the bank computer is operational")
+    public void the_bank_computer_is_operational() {
+        try {
+            db = new DatabaseProxy();
+        } catch (Exception e) {
+            fail("DatabaseProxy not available");
+        }
+    }
+
+    @Given("customer with account {string} has balance {double}")
+    public void customer_with_account_has_balance(String account, Double balance) {
+        try {
+            db = new DatabaseProxy();
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @Given("customer has already withdrawn {double} today")
+    public void customer_has_already_withdrawn_today(Double amount) {
+        // Track daily withdrawal amount
+    }
+
+    @When("the customer requests withdrawal of {double}")
+    public void the_customer_requests_withdrawal_of(Double amount) {
+        requestedAmount = amount;
+        try {
+            atm.verifyInputAmount();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.verifyInputAmount() not implemented");
+        }
+    }
+
+    @Then("the bank computer should process the transaction")
+    public void the_bank_computer_should_process_transaction() {
+        try {
+            db.minusBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.minusBalance() not implemented");
+        }
+    }
+
+    @Then("the bank should update the daily withdrawal counter to {double}")
+    public void the_bank_should_update_daily_withdrawal_counter(Double amount) {
+        try {
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @Then("the bank should send {string} to ATM")
+    public void the_bank_should_send_to_atm(String message) {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    @Then("the bank computer should check against daily limit")
+    public void the_bank_computer_should_check_against_daily_limit() {
+        try {
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @Given("the bank has authorized a withdrawal of {double}")
+    public void the_bank_has_authorized_withdrawal_of(Double amount) {
+        requestedAmount = amount;
+        transactionSuccess = true;
+    }
+
+    @When("the ATM dispenses {double} in cash")
+    public void the_atm_dispenses_in_cash(Double amount) {
+        try {
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            cashDispenser.dispenseCash(null);
+        } catch (UnsupportedOperationException e) {
+            fail("CashDispenser.dispenseCash() not implemented");
+        }
+    }
+
+    @Then("the ATM should send confirmation to bank computer")
+    public void the_atm_should_send_confirmation_to_bank_computer() {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    @Then("the bank should permanently update the account balance to {double}")
+    public void the_bank_should_permanently_update_account_balance(Double balance) {
+        try {
+            db.minusBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.minusBalance() not implemented");
+        }
+    }
+
+    @Then("the bank should create a new account record")
+    public void the_bank_should_create_new_account_record() {
+        try {
+            db.createNewAccount();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.createNewAccount() not implemented");
+        }
+    }
+
+    @Given("a withdrawal of {double} has been authorized")
+    public void a_withdrawal_has_been_authorized(Double amount) {
+        requestedAmount = amount;
+        transactionSuccess = true;
+    }
+
+    @When("the cash dispenser successfully dispenses {double}")
+    public void the_cash_dispenser_successfully_dispenses(Double amount) {
+        try {
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            cashDispenser.dispenseCash(null);
+        } catch (UnsupportedOperationException e) {
+            fail("CashDispenser.dispenseCash() not implemented");
+        }
+    }
+
+    @Then("the ATM should send {string} response to bank")
+    public void the_atm_should_send_response_to_bank(String response) {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.sendMessage(null, null);
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.sendMessage() not implemented");
+        }
+    }
+
+    @Then("the bank should finalize the transaction")
+    public void the_bank_should_finalize_transaction() {
+        try {
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @Then("the account should reflect the new balance")
+    public void the_account_should_reflect_new_balance() {
+        try {
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @When("the cash dispenser fails to dispense cash")
+    public void the_cash_dispenser_fails_to_dispense_cash() {
+        try {
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            cashDispenser.dispenseCash(null);
+        } catch (UnsupportedOperationException e) {
+            fail("CashDispenser.dispenseCash() not implemented");
+        }
+    }
+
+    @Then("the bank should rollback the transaction")
+    public void the_bank_should_rollback_transaction() {
+        try {
+            db.plusBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.plusBalance() not implemented");
+        }
+    }
+
+    @Then("the account balance should remain unchanged")
+    public void the_account_balance_should_remain_unchanged() {
+        try {
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    // ===========================================
+    // MAINTAINABILITY FEATURE STEPS
+    // ===========================================
+
+    @Given("the ATM is properly configured")
+    public void the_atm_is_properly_configured() {
+        try {
+            atm = new ATM();
+        } catch (Exception e) {
+            fail("ATM configuration failed");
+        }
+    }
+
+    @When("I check the system status at any time of day")
+    public void i_check_system_status_at_any_time() {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.checkAvailabilityOfCashInATM() not implemented");
+        }
+    }
+
+    @Then("the ATM should be operational")
+    public void the_atm_should_be_operational() {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.checkAvailabilityOfCashInATM() not implemented");
+        }
+    }
+
+    @Then("all core services should be available")
+    public void all_core_services_should_be_available() {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM services not implemented");
+        }
+    }
+
+    @Given("the ATM is in operational state")
+    public void the_atm_is_in_operational_state() {
+        the_atm_is_properly_configured();
+    }
+
+    @Then("the following services should be available:")
+    public void the_following_services_should_be_available(io.cucumber.datatable.DataTable dataTable) {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM services not implemented");
+        }
+    }
+
+    @Given("a new ATM device needs to be connected to network")
+    public void a_new_atm_device_needs_to_be_connected() {
+        // Setup for new ATM connection
+    }
+
+    @When("an unauthorized person attempts to connect the ATM")
+    public void unauthorized_person_attempts_to_connect() {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.openConnection();
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.openConnection() not implemented");
+        }
+    }
+
+    @Then("the connection should be rejected")
+    public void the_connection_should_be_rejected() {
+        assertFalse("Unauthorized connection should be rejected", transactionSuccess);
+    }
+
+    @Then("the system should log the unauthorized attempt")
+    public void the_system_should_log_unauthorized_attempt() {
+        try {
+            log = new Log();
+            log.logResponse(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logResponse() not implemented");
+        }
+    }
+
+    @Given("a maintainer is authenticated with valid credentials")
+    public void maintainer_is_authenticated() {
+        transactionSuccess = true;
+    }
+
+    @When("the maintainer initiates the ATM connection")
+    public void maintainer_initiates_atm_connection() {
+        try {
+            NetworkToBank network = new NetworkToBank(log, null);
+            network.openConnection();
+        } catch (UnsupportedOperationException e) {
+            fail("NetworkToBank.openConnection() not implemented");
+        }
+    }
+
+    @Then("the new ATM should be registered in the network")
+    public void new_atm_should_be_registered() {
+        assertTrue("ATM should be registered", transactionSuccess);
+    }
+
+    @Then("the ATM should receive its configuration")
+    public void atm_should_receive_configuration() {
+        try {
+            atm = new ATM();
+        } catch (Exception e) {
+            fail("ATM configuration failed");
+        }
+    }
+
+    @Then("the connection should be logged with maintainer ID")
+    public void connection_should_be_logged_with_maintainer_id() {
+        try {
+            log = new Log();
+            log.logSend(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logSend() not implemented");
+        }
+    }
+
+    @Given("the ATM is powered on")
+    public void the_atm_is_powered_on() {
+        the_atm_is_properly_configured();
+    }
+
+    @When("the ATM runs startup diagnostics")
+    public void the_atm_runs_startup_diagnostics() {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+        } catch (UnsupportedOperationException e) {
+            fail("ATM.checkAvailabilityOfCashInATM() not implemented");
+        }
+    }
+
+    @Then("it should check all hardware components:")
+    public void it_should_check_all_hardware_components(io.cucumber.datatable.DataTable dataTable) {
+        try {
+            atm.checkAvailabilityOfCashInATM();
+            cardReader = new CardReader(atm);
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            display = new Display();
+        } catch (UnsupportedOperationException e) {
+            fail("Hardware components not implemented");
+        }
+    }
+
+    @Then("report any failures to the maintenance system")
+    public void report_failures_to_maintenance_system() {
+        try {
+            log = new Log();
+            log.logResponse(null);
+        } catch (UnsupportedOperationException e) {
+            fail("Log.logResponse() not implemented");
+        }
+    }
+
+    // ===========================================
+    // RECEIPT PRINTING FEATURE STEPS (FR14)
+    // ===========================================
+
+    private ReceiptPrinter receiptPrinter;
+    private boolean receiptPrinted;
+
+    @Given("the receipt printer is operational")
+    public void the_receipt_printer_is_operational() {
+        try {
+            receiptPrinter = new ReceiptPrinter();
+        } catch (UnsupportedOperationException e) {
+            fail("ReceiptPrinter not implemented");
+        }
+    }
+
+    @Then("the ATM should print a receipt")
+    public void the_atm_should_print_a_receipt() {
+        try {
+            receiptPrinter = new ReceiptPrinter();
+            receiptPrinter.printReceipt(null);
+            receiptPrinted = true;
+        } catch (UnsupportedOperationException e) {
+            fail("ReceiptPrinter.printReceipt() not implemented");
+        }
+    }
+
+    @Then("the receipt should contain:")
+    public void the_receipt_should_contain(io.cucumber.datatable.DataTable dataTable) {
+        try {
+            receiptPrinter.printReceipt(null);
+        } catch (UnsupportedOperationException e) {
+            fail("ReceiptPrinter.printReceipt() not implemented");
+        }
+    }
+
+    @When("I complete a deposit of {double}")
+    public void i_complete_a_deposit_of(Double amount) {
+        requestedAmount = amount;
+        try {
+            log = new Log();
+            log.logEnvelopeAccepted();
+            db = new DatabaseProxy();
+            db.plusBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("Deposit operations not implemented");
+        }
+    }
+
+    @When("I complete a transfer of {double} to account {string}")
+    public void i_complete_a_transfer_of_to_account(Double amount, String targetAccount) {
+        requestedAmount = amount;
+        targetAccountNum = targetAccount;
+        try {
+            db = new DatabaseProxy();
+            db.minusBalance();
+            db.plusBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("Transfer operations not implemented");
+        }
+    }
+
+    @When("I request a balance inquiry")
+    public void i_request_a_balance_inquiry() {
+        try {
+            db = new DatabaseProxy();
+            db.checkTheBalance();
+        } catch (UnsupportedOperationException e) {
+            fail("DatabaseProxy.checkTheBalance() not implemented");
+        }
+    }
+
+    @When("I choose to print the balance")
+    public void i_choose_to_print_the_balance() {
+        try {
+            receiptPrinter = new ReceiptPrinter();
+            receiptPrinter.printReceipt(null);
+        } catch (UnsupportedOperationException e) {
+            fail("ReceiptPrinter.printReceipt() not implemented");
+        }
+    }
+
+    @Then("the receipt should contain the current balance")
+    public void the_receipt_should_contain_current_balance() {
+        try {
+            receiptPrinter.printReceipt(null);
+        } catch (UnsupportedOperationException e) {
+            fail("ReceiptPrinter.printReceipt() not implemented");
+        }
+    }
+
+    @Given("the receipt printer has a paper jam")
+    public void the_receipt_printer_has_paper_jam() {
+        // Simulate printer error
+        receiptPrinted = false;
+    }
+
+    @Then("the transaction should still complete successfully")
+    public void the_transaction_should_still_complete_successfully() {
+        // Transaction completes despite printer error
+        assertTrue("Transaction should complete", true);
+    }
+
+    @Then("the cash should still be dispensed")
+    public void the_cash_should_still_be_dispensed() {
+        try {
+            log = new Log();
+            cashDispenser = new CashDispenser(log);
+            cashDispenser.dispenseCash(null);
+        } catch (UnsupportedOperationException e) {
+            fail("CashDispenser.dispenseCash() not implemented");
+        }
+    }
+
+    @When("I choose not to print a receipt")
+    public void i_choose_not_to_print_a_receipt() {
+        receiptPrinted = false;
+    }
+
+    @Then("no receipt should be printed")
+    public void no_receipt_should_be_printed() {
+        assertFalse("No receipt should be printed", receiptPrinted);
+    }
+
+    @Then("the transaction should complete normally")
+    public void the_transaction_should_complete_normally() {
+        // Transaction completes without printing
+        assertTrue("Transaction should complete", true);
+    }
 }

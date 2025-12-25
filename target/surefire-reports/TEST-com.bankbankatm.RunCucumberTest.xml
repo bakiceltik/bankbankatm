@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bankbankatm.RunCucumberTest" time="0.416" tests="35" errors="0" skipped="0" failures="35">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bankbankatm.RunCucumberTest" time="0.516" tests="57" errors="0" skipped="0" failures="57">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.26/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225175234732_3.jar /Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire 2025-12-25T17-52-34_688-jvmRun1 surefire-20251225175234732_1tmp surefire_0-20251225175234732_2tmp"/>
+    <property name="sun.java.command" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225182054397_3.jar /Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire 2025-12-25T18-20-54_361-jvmRun1 surefire-20251225182054397_1tmp surefire_0-20251225182054397_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/test-classes:/Users/bakiceltik/Documents/GitHub/bankbankatm/target/classes:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/bakiceltik/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/bakiceltik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/Users/bakiceltik/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/bakiceltik/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225175234732_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225182054397_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.26+0"/>
@@ -62,10 +62,10 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Successful login with valid card and PIN" classname="ATM Authentication" time="0.054">
+  <testcase name="Successful login with valid card and PIN" classname="ATM Authentication" time="0.061">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -74,7 +74,7 @@ Scenario: Successful login with valid card and PIN               &amp#27;[90m# s
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
@@ -90,10 +90,10 @@ Scenario: Successful login with valid card and PIN               &amp#27;[90m# s
     | Change Password |
 ]]></system-out>
   </testcase>
-  <testcase name="PIN entry timeout" classname="ATM Authentication" time="0.005">
+  <testcase name="PIN entry timeout" classname="ATM Authentication" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -102,7 +102,7 @@ Scenario: PIN entry timeout                                      &amp#27;[90m# s
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
@@ -112,10 +112,10 @@ Scenario: PIN entry timeout                                      &amp#27;[90m# s
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Time limit exceeded"&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Login with invalid card (expired or unreadable)" classname="ATM Authentication" time="0.007">
+  <testcase name="Login with invalid card (expired or unreadable)" classname="ATM Authentication" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -124,7 +124,7 @@ Scenario: Login with invalid card (expired or unreadable)        &amp#27;[90m# s
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
@@ -133,10 +133,10 @@ Scenario: Login with invalid card (expired or unreadable)        &amp#27;[90m# s
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Card invalid or unreadable"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Login with incorrect PIN" classname="ATM Authentication" time="0.006">
+  <testcase name="Login with incorrect PIN" classname="ATM Authentication" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -145,7 +145,7 @@ Scenario: Login with incorrect PIN                                   &amp#27;[90
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
@@ -158,7 +158,7 @@ Scenario: Login with incorrect PIN                                   &amp#27;[90
   <testcase name="Account lockout after 3 incorrect PIN attempts" classname="ATM Authentication" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -167,7 +167,7 @@ Scenario: Account lockout after 3 incorrect PIN attempts                &amp#27;
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
@@ -177,11 +177,176 @@ Scenario: Account lockout after 3 incorrect PIN attempts                &amp#27;
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Card retained. Please contact your bank."&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Successfully change PIN" classname="Change Password" time="0.006">
+  <testcase name="Card from unsupported bank" classname="ATM Authentication" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
+]]></failure>
+    <system-out><![CDATA[
+@auth @bad_bank_code
+Scenario: Card from unsupported bank                                 &amp#27;[90m# src/test/resources/features/auth.feature:52&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI insert a card with unsupported bank code &amp#27;[0m&amp#27;[36m&amp#27;[1m"UNKNOWNBANK"&amp#27;[0m      &amp#27;[90m# com.bankbankatm.StepDefinitions.i_insert_card_with_unsupported_bank_code(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe bank computer should return &amp#27;[0m&amp#27;[36m&amp#27;[1m"bad bank code"&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_should_return(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe system should eject the card&amp#27;[0m                               &amp#27;[90m# com.bankbankatm.StepDefinitions.the_system_should_eject_the_card()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Bank not supported by this ATM"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Card with account problems" classname="ATM Authentication" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
+]]></failure>
+    <system-out><![CDATA[
+@auth @bad_account
+Scenario: Card with account problems                                             &amp#27;[90m# src/test/resources/features/auth.feature:60&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/auth.feature:7)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM is in the idle state displaying the welcome screen&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI insert a valid card with serial &amp#27;[0m&amp#27;[36m&amp#27;[1m"9999999999"&amp#27;[0m                            &amp#27;[90m# com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI enter the correct PIN &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234"&amp#27;[0m                                             &amp#27;[90m# com.bankbankatm.StepDefinitions.i_enter_the_correct_pin(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer returns &amp#27;[0m&amp#27;[36m&amp#27;[1m"bad account"&amp#27;[0m                                    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_returns(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe system should eject the card&amp#27;[0m                                          &amp#27;[90m# com.bankbankatm.StepDefinitions.the_system_should_eject_the_card()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Account problem. Please contact your bank."&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Bank processes transaction and updates daily limit (Bank FR7)" classname="Bank Computer Integration" time="0.004">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+@bank @transaction_processing
+Scenario: Bank processes transaction and updates daily limit (Bank FR7) &amp#27;[90m# src/test/resources/features/bank_integration.feature:13&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM is connected to the bank network&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer is operational&amp#27;[0m                                  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mcustomer with account &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m&amp#27;[36m has balance &amp#27;[0m&amp#27;[36m&amp#27;[1m5000.00&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.customer_with_account_has_balance(java.lang.String,java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmaximum daily withdrawal limit (k) is 2000.00&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mcustomer has already withdrawn &amp#27;[0m&amp#27;[36m&amp#27;[1m1500.00&amp#27;[0m&amp#27;[36m today&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.customer_has_already_withdrawn_today(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe customer requests withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m400.00&amp#27;[0m                       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_customer_requests_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe bank computer should process the transaction&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_should_process_transaction()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should update the daily withdrawal counter to &amp#27;[0m&amp#27;[36m&amp#27;[1m1900.00&amp#27;[0m    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_update_daily_withdrawal_counter(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should send &amp#27;[0m&amp#27;[36m&amp#27;[1m"transaction succeeded"&amp#27;[0m&amp#27;[36m to ATM&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_send_to_atm(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Bank rejects transaction exceeding daily limit (Bank FR9)" classname="Bank Computer Integration" time="0.004">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+@bank @daily_limit_exceeded
+Scenario: Bank rejects transaction exceeding daily limit (Bank FR9) &amp#27;[90m# src/test/resources/features/bank_integration.feature:23&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM is connected to the bank network&amp#27;[0m                    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer is operational&amp#27;[0m                              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mcustomer with account &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m&amp#27;[36m has balance &amp#27;[0m&amp#27;[36m&amp#27;[1m5000.00&amp#27;[0m      &amp#27;[90m# com.bankbankatm.StepDefinitions.customer_with_account_has_balance(java.lang.String,java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmaximum daily withdrawal limit (k) is 2000.00&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mcustomer has already withdrawn &amp#27;[0m&amp#27;[36m&amp#27;[1m1800.00&amp#27;[0m&amp#27;[36m today&amp#27;[0m                  &amp#27;[90m# com.bankbankatm.StepDefinitions.customer_has_already_withdrawn_today(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe customer requests withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m500.00&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_customer_requests_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe bank computer should check against daily limit&amp#27;[0m           &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_should_check_against_daily_limit()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should send &amp#27;[0m&amp#27;[36m&amp#27;[1m"transaction failed"&amp#27;[0m&amp#27;[36m to ATM&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_send_to_atm(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see error "Daily withdrawal limit exceeded"&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Bank updates account after money dispensed (Bank FR8)" classname="Bank Computer Integration" time="0.003">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+@bank @account_update_confirmation
+Scenario: Bank updates account after money dispensed (Bank FR8)        &amp#27;[90m# src/test/resources/features/bank_integration.feature:33&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM is connected to the bank network&amp#27;[0m                       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer is operational&amp#27;[0m                                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mcustomer with account &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m&amp#27;[36m has balance &amp#27;[0m&amp#27;[36m&amp#27;[1m1000.00&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.customer_with_account_has_balance(java.lang.String,java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank has authorized a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_has_authorized_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe ATM dispenses &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m&amp#27;[36m in cash&amp#27;[0m                                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_dispenses_in_cash(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should send confirmation to bank computer&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_send_confirmation_to_bank_computer()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should permanently update the account balance to &amp#27;[0m&amp#27;[36m&amp#27;[1m800.00&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_permanently_update_account_balance(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should create a new account record&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_create_new_account_record()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="ATM confirms cash dispensed to bank" classname="Bank Computer Integration" time="0.004">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+@bank @dispense_confirmation
+Scenario: ATM confirms cash dispensed to bank                 &amp#27;[90m# src/test/resources/features/bank_integration.feature:42&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM is connected to the bank network&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer is operational&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m300.00&amp#27;[0m&amp#27;[36m has been authorized&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.a_withdrawal_has_been_authorized(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe cash dispenser successfully dispenses &amp#27;[0m&amp#27;[36m&amp#27;[1m300.00&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_cash_dispenser_successfully_dispenses(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should send &amp#27;[0m&amp#27;[36m&amp#27;[1m"money dispensed"&amp#27;[0m&amp#27;[36m response to bank&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_send_response_to_bank(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should finalize the transaction&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_finalize_transaction()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe account should reflect the new balance&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_account_should_reflect_new_balance()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="ATM reports dispense failure to bank" classname="Bank Computer Integration" time="0.003">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+]]></failure>
+    <system-out><![CDATA[
+@bank @dispense_failure
+Scenario: ATM reports dispense failure to bank                &amp#27;[90m# src/test/resources/features/bank_integration.feature:50&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM is connected to the bank network&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
+	at ✽.the ATM is connected to the bank network(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/bank_integration.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank computer is operational&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m300.00&amp#27;[0m&amp#27;[36m has been authorized&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.a_withdrawal_has_been_authorized(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe cash dispenser fails to dispense cash&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_cash_dispenser_fails_to_dispense_cash()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should send &amp#27;[0m&amp#27;[36m&amp#27;[1m"dispense failed"&amp#27;[0m&amp#27;[36m response to bank&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_send_response_to_bank(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should rollback the transaction&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_rollback_transaction()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe account balance should remain unchanged&amp#27;[0m             &amp#27;[90m# com.bankbankatm.StepDefinitions.the_account_balance_should_remain_unchanged()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Successfully change PIN" classname="Change Password" time="0.005">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -190,8 +355,8 @@ Scenario: Successfully change PIN                            &amp#27;[90m# src/t
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m        &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy current PIN is &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234"&amp#27;[0m                               &amp#27;[90m# com.bankbankatm.StepDefinitions.my_current_pin_is(java.lang.String)&amp#27;[0m
@@ -203,11 +368,11 @@ Scenario: Successfully change PIN                            &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a "Password Changed Successfully" message&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Change PIN with incorrect old PIN" classname="Change Password" time="0.004">
+  <testcase name="Change PIN with incorrect old PIN" classname="Change Password" time="0.007">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -216,8 +381,8 @@ Scenario: Change PIN with incorrect old PIN             &amp#27;[90m# src/test/r
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy current PIN is &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234"&amp#27;[0m                          &amp#27;[90m# com.bankbankatm.StepDefinitions.my_current_pin_is(java.lang.String)&amp#27;[0m
@@ -228,11 +393,11 @@ Scenario: Change PIN with incorrect old PIN             &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy PIN should remain "1234"&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="New PIN confirmation mismatch" classname="Change Password" time="0.005">
+  <testcase name="New PIN confirmation mismatch" classname="Change Password" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -241,8 +406,8 @@ Scenario: New PIN confirmation mismatch                 &amp#27;[90m# src/test/r
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/change_password.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy current PIN is &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234"&amp#27;[0m                          &amp#27;[90m# com.bankbankatm.StepDefinitions.my_current_pin_is(java.lang.String)&amp#27;[0m
@@ -255,11 +420,11 @@ Scenario: New PIN confirmation mismatch                 &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy PIN should remain "1234"&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Successful cash deposit" classname="Cash Deposit" time="0.004">
+  <testcase name="Successful cash deposit" classname="Cash Deposit" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -268,8 +433,8 @@ Scenario: Successful cash deposit                                &amp#27;[90m# s
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -287,8 +452,8 @@ Scenario: Successful cash deposit                                &amp#27;[90m# s
   <testcase name="Deposit with invalid currency or unrecognized bills" classname="Cash Deposit" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -297,8 +462,8 @@ Scenario: Deposit with invalid currency or unrecognized bills &amp#27;[90m# src/
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -312,11 +477,11 @@ Scenario: Deposit with invalid currency or unrecognized bills &amp#27;[90m# src/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Some items were rejected"&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="User cancels deposit transaction" classname="Cash Deposit" time="0.004">
+  <testcase name="User cancels deposit transaction" classname="Cash Deposit" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -325,8 +490,8 @@ Scenario: User cancels deposit transaction              &amp#27;[90m# src/test/r
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/deposit.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -339,10 +504,10 @@ Scenario: User cancels deposit transaction              &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance should remain 1000.00&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM initialization with parameters" classname="ATM Initialization and Configuration" time="0.007">
+  <testcase name="ATM initialization with parameters" classname="ATM Initialization and Configuration" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.i_set_total_fund_to(StepDefinitions.java:688)
+	at com.bankbankatm.StepDefinitions.i_set_total_fund_to(StepDefinitions.java:667)
 	at ✽.I set total fund (t) to 100000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:15)
 ]]></failure>
     <system-out><![CDATA[
@@ -352,7 +517,7 @@ Scenario: ATM initialization with parameters                 &amp#27;[90m# src/t
   &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI set total fund (t) to &amp#27;[0m&amp#27;[31m&amp#27;[1m100000.00&amp#27;[0m                     &amp#27;[90m# com.bankbankatm.StepDefinitions.i_set_total_fund_to(java.lang.Double)&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.i_set_total_fund_to(StepDefinitions.java:688)
+	at com.bankbankatm.StepDefinitions.i_set_total_fund_to(StepDefinitions.java:667)
 	at ✽.I set total fund (t) to 100000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:15)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI set maximum daily withdrawal (k) to &amp#27;[0m&amp#27;[36m&amp#27;[1m2000.00&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_set_maximum_daily_withdrawal_k_to(java.lang.Double)&amp#27;[0m
@@ -365,7 +530,7 @@ Scenario: ATM initialization with parameters                 &amp#27;[90m# src/t
   <testcase name="ATM rejects card when cash below minimum threshold" classname="ATM Initialization and Configuration" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:726)
 	at ✽.the minimum cash threshold (n) is 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:25)
 ]]></failure>
     <system-out><![CDATA[
@@ -375,7 +540,7 @@ Scenario: ATM rejects card when cash below minimum threshold &amp#27;[90m# src/t
   &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe minimum cash threshold (n) is &amp#27;[0m&amp#27;[31m&amp#27;[1m1000.00&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(java.lang.Double)&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:726)
 	at ✽.the minimum cash threshold (n) is 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:25)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36ma customer attempts to insert a card&amp#27;[0m                  &amp#27;[90m# com.bankbankatm.StepDefinitions.a_customer_attempts_to_insert_a_card()&amp#27;[0m
@@ -386,7 +551,7 @@ Scenario: ATM rejects card when cash below minimum threshold &amp#27;[90m# src/t
   <testcase name="ATM displays welcome screen when idle" classname="ATM Initialization and Configuration" time="0.003">
     <failure message="Display.display() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:777)
+	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:756)
 	at ✽.the ATM should display the welcome screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:34)
 ]]></failure>
     <system-out><![CDATA[
@@ -396,7 +561,7 @@ Scenario: ATM displays welcome screen when idle  &amp#27;[90m# src/test/resource
   &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe ATM should display the welcome screen&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:777)
+	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:756)
 	at ✽.the ATM should display the welcome screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:34)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM should be ready to accept a card&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_be_ready_to_accept_a_card()&amp#27;[0m
@@ -405,7 +570,7 @@ Scenario: ATM displays welcome screen when idle  &amp#27;[90m# src/test/resource
   <testcase name="ATM running out of money rejects transactions" classname="ATM Initialization and Configuration" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:726)
 	at ✽.the minimum cash threshold (n) is 500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:41)
 ]]></failure>
     <system-out><![CDATA[
@@ -415,7 +580,7 @@ Scenario: ATM running out of money rejects transactions      &amp#27;[90m# src/t
   &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe minimum cash threshold (n) is &amp#27;[0m&amp#27;[31m&amp#27;[1m500.00&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(java.lang.Double)&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:747)
+	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:726)
 	at ✽.the minimum cash threshold (n) is 500.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:41)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36ma customer has successfully logged in&amp#27;[0m                  &amp#27;[90m# com.bankbankatm.StepDefinitions.a_customer_has_successfully_logged_in()&amp#27;[0m
@@ -425,10 +590,10 @@ Scenario: ATM running out of money rejects transactions      &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe card should be returned to customer&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_card_should_be_returned_to_customer()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Card serial number is logged on insertion" classname="ATM Initialization and Configuration" time="0.004">
+  <testcase name="Card serial number is logged on insertion" classname="ATM Initialization and Configuration" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:51)
 ]]></failure>
     <system-out><![CDATA[
@@ -437,7 +602,7 @@ Scenario: Card serial number is logged on insertion            &amp#27;[90m# src
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
 	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:51)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI insert a valid card with serial &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(java.lang.String)&amp#27;[0m
@@ -445,12 +610,12 @@ Scenario: Card serial number is logged on insertion            &amp#27;[90m# src
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log entry should include timestamp&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_entry_should_include_timestamp()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Each step must be completed within 60 seconds" classname="ATM Initialization and Configuration" time="0.002">
+  <testcase name="Each step must be completed within 60 seconds" classname="ATM Initialization and Configuration" time="0.003">
     <failure message="ATM.readAccountNum() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.readAccountNum() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:85)
-	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card(StepDefinitions.java:91)
-	at com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card(StepDefinitions.java:829)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:64)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card(StepDefinitions.java:70)
+	at com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card(StepDefinitions.java:808)
 	at ✽.a customer has inserted a card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:59)
 ]]></failure>
     <system-out><![CDATA[
@@ -459,9 +624,9 @@ Scenario: Each step must be completed within 60 seconds                  &amp#27
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31ma customer has inserted a card&amp#27;[0m                                   &amp#27;[90m# com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.readAccountNum() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:85)
-	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card(StepDefinitions.java:91)
-	at com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card(StepDefinitions.java:829)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:64)
+	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card(StepDefinitions.java:70)
+	at com.bankbankatm.StepDefinitions.a_customer_has_inserted_a_card(StepDefinitions.java:808)
 	at ✽.a customer has inserted a card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/initialization.feature:59)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe customer does not complete the current step within &amp#27;[0m&amp#27;[36m&amp#27;[1m60&amp#27;[0m&amp#27;[36m seconds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_customer_does_not_complete_within_seconds(java.lang.Integer)&amp#27;[0m
@@ -470,11 +635,11 @@ Scenario: Each step must be completed within 60 seconds                  &amp#27
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Session timeout - card retained"&amp#27;[0m           &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Check account balance" classname="Account Inquiry" time="0.004">
+  <testcase name="Check account balance" classname="Account Inquiry" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -483,8 +648,8 @@ Scenario: Check account balance                         &amp#27;[90m# src/test/r
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 3500.50&amp#27;[0m
@@ -497,8 +662,8 @@ Scenario: Check account balance                         &amp#27;[90m# src/test/r
   <testcase name="View recent transactions" classname="Account Inquiry" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -507,8 +672,8 @@ Scenario: View recent transactions                                  &amp#27;[90m
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/inquiry.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 3500.50&amp#27;[0m
@@ -519,12 +684,222 @@ Scenario: View recent transactions                                  &amp#27;[90m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should have the option to print this statement&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Session timeout due to user inactivity" classname="System Performance and Timing Constraints" time="0.006">
+  <testcase name="Log card serial number on insertion (FR6)" classname="Transaction Logging" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen(StepDefinitions.java:402)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@logging @serial
+Scenario: Log card serial number on insertion (FR6)            &amp#27;[90m# src/test/resources/features/logging.feature:14&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe logging system is operational&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_logging_system_is_operational()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI insert a valid card with serial &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe log should record the card insertion&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_record_card_insertion()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log entry should contain serial number &amp#27;[0m&amp#27;[36m&amp#27;[1m"1234567890"&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_entry_should_contain_serial_number(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log entry should contain a timestamp&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_entry_should_contain_a_timestamp()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Log dispensed amount with serial number (FR15)" classname="Transaction Logging" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@logging @withdrawal
+Scenario: Log dispensed amount with serial number (FR15)        &amp#27;[90m# src/test/resources/features/logging.feature:21&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe logging system is operational&amp#27;[0m                         &amp#27;[90m# com.bankbankatm.StepDefinitions.the_logging_system_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI am successfully logged in with a valid card&amp#27;[0m           &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe log should record the dispensed amount &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_record_dispensed_amount(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log should contain the card serial number&amp#27;[0m             &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_contain_card_serial_number()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log should contain the transaction timestamp&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_contain_transaction_timestamp()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36ma response should be sent to the bank for money dispensed&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.response_should_be_sent_to_bank_for_money_dispensed()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Complete transaction logging cycle" classname="Transaction Logging" time="0.004">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@logging @transaction_complete
+Scenario: Complete transaction logging cycle                   &amp#27;[90m# src/test/resources/features/logging.feature:31&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe logging system is operational&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_logging_system_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI am successfully logged in with a valid card&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI perform a transaction&amp#27;[0m                                 &amp#27;[90m# com.bankbankatm.StepDefinitions.i_perform_a_transaction()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe log should contain:&amp#27;[0m                                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_contain(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Field            | Value              |
+    | Serial Number    | card serial        |
+    | Transaction Type | withdrawal         |
+    | Amount           | transaction amount |
+    | Timestamp        | current time       |
+    | Status           | success/failure    |
+]]></system-out>
+  </testcase>
+  <testcase name="Log failed transaction attempts" classname="Transaction Logging" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@logging @failed_transaction
+Scenario: Log failed transaction attempts                      &amp#27;[90m# src/test/resources/features/logging.feature:43&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe ATM system is initialized and has sufficient funds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at ✽.the ATM system is initialized and has sufficient funds(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/logging.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe logging system is operational&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_logging_system_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI am successfully logged in with a valid card&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 100.00&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI attempt a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m500.00&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.i_attempt_a_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe transaction fails due to insufficient funds&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.transaction_fails_due_to_insufficient_funds()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe log should record the failed attempt&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_record_failed_attempt()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log should contain the reason &amp#27;[0m&amp#27;[36m&amp#27;[1m"Insufficient funds"&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_contain_reason(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="ATM available 24 hours a day (4.4.1)" classname="ATM Maintainability and Availability" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.i_check_system_status_at_any_time(StepDefinitions.java:1423)
+	at ✽.I check the system status at any time of day(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:12)
+]]></failure>
+    <system-out><![CDATA[
+@availability @24_7
+Scenario: ATM available 24 hours a day (4.4.1)      &amp#27;[90m# src/test/resources/features/maintainability.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe ATM is properly configured&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_properly_configured()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI check the system status at any time of day&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_check_system_status_at_any_time()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.i_check_system_status_at_any_time(StepDefinitions.java:1423)
+	at ✽.I check the system status at any time of day(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:12)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should be operational&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_be_operational()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mall core services should be available&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.all_core_services_should_be_available()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="All ATM services available" classname="ATM Maintainability and Availability" time="0.003">
+    <failure message="ATM services not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM services not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_following_services_should_be_available(StepDefinitions.java:1455)
+	at ✽.the following services should be available:(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:19)
+]]></failure>
+    <system-out><![CDATA[
+@availability @service_check
+Scenario: All ATM services available               &amp#27;[90m# src/test/resources/features/maintainability.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe ATM is in operational state&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_in_operational_state()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mthe following services should be available:&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_following_services_should_be_available(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Service         |
+    | Cash Withdrawal |
+    | Balance Inquiry |
+    | Money Transfer  |
+    | PIN Change      |
+    | Deposit         |
+      &amp#27;[31mjava.lang.AssertionError: ATM services not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_following_services_should_be_available(StepDefinitions.java:1455)
+	at ✽.the following services should be available:(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:19)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Only maintainers can connect new ATMs (4.4.3)" classname="ATM Maintainability and Availability" time="0.004">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.unauthorized_person_attempts_to_connect(StepDefinitions.java:1470)
+	at ✽.an unauthorized person attempts to connect the ATM(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:30)
+]]></failure>
+    <system-out><![CDATA[
+@maintainability @connection
+Scenario: Only maintainers can connect new ATMs (4.4.3)   &amp#27;[90m# src/test/resources/features/maintainability.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma new ATM device needs to be connected to network&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.a_new_atm_device_needs_to_be_connected()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31man unauthorized person attempts to connect the ATM&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.unauthorized_person_attempts_to_connect()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.unauthorized_person_attempts_to_connect(StepDefinitions.java:1470)
+	at ✽.an unauthorized person attempts to connect the ATM(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:30)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe connection should be rejected&amp#27;[0m                  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_connection_should_be_rejected()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe system should log the unauthorized attempt&amp#27;[0m      &amp#27;[90m# com.bankbankatm.StepDefinitions.the_system_should_log_unauthorized_attempt()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Maintainer successfully connects new ATM" classname="ATM Maintainability and Availability" time="0.003">
+    <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.maintainer_initiates_atm_connection(StepDefinitions.java:1500)
+	at ✽.the maintainer initiates the ATM connection(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:38)
+]]></failure>
+    <system-out><![CDATA[
+@maintainability @authorized_connection
+Scenario: Maintainer successfully connects new ATM         &amp#27;[90m# src/test/resources/features/maintainability.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma new ATM device needs to be connected to network&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.a_new_atm_device_needs_to_be_connected()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma maintainer is authenticated with valid credentials&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.maintainer_is_authenticated()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mthe maintainer initiates the ATM connection&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.maintainer_initiates_atm_connection()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: NetworkToBank.openConnection() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.maintainer_initiates_atm_connection(StepDefinitions.java:1500)
+	at ✽.the maintainer initiates the ATM connection(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:38)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe new ATM should be registered in the network&amp#27;[0m     &amp#27;[90m# com.bankbankatm.StepDefinitions.new_atm_should_be_registered()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM should receive its configuration&amp#27;[0m             &amp#27;[90m# com.bankbankatm.StepDefinitions.atm_should_receive_configuration()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe connection should be logged with maintainer ID&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.connection_should_be_logged_with_maintainer_id()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="ATM self-diagnostics" classname="ATM Maintainability and Availability" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_runs_startup_diagnostics(StepDefinitions.java:1538)
+	at ✽.the ATM runs startup diagnostics(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:46)
+]]></failure>
+    <system-out><![CDATA[
+@maintainability @diagnostics
+Scenario: ATM self-diagnostics                      &amp#27;[90m# src/test/resources/features/maintainability.feature:44&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe ATM is powered on&amp#27;[0m                       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_is_powered_on()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mthe ATM runs startup diagnostics&amp#27;[0m             &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_runs_startup_diagnostics()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_runs_startup_diagnostics(StepDefinitions.java:1538)
+	at ✽.the ATM runs startup diagnostics(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/maintainability.feature:46)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mit should check all hardware components:&amp#27;[0m     &amp#27;[90m# com.bankbankatm.StepDefinitions.it_should_check_all_hardware_components(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Component      | Status |
+    | Card Reader    | OK     |
+    | Cash Dispenser | OK     |
+    | Display        | OK     |
+    | Network        | OK     |
+    | Printer        | OK     |
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mreport any failures to the maintenance system&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.report_failures_to_maintenance_system()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Session timeout due to user inactivity" classname="System Performance and Timing Constraints" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen(StepDefinitions.java:381)
 	at ✽.I am on any transaction screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:9)
 ]]></failure>
     <system-out><![CDATA[
@@ -533,9 +908,9 @@ Scenario: Session timeout due to user inactivity  &amp#27;[90m# src/test/resourc
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am on any transaction screen&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen(StepDefinitions.java:402)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_am_on_any_transaction_screen(StepDefinitions.java:381)
 	at ✽.I am on any transaction screen(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:9)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI do not perform any action for 60 seconds&amp#27;[0m
@@ -547,7 +922,7 @@ Scenario: Session timeout due to user inactivity  &amp#27;[90m# src/test/resourc
   <testcase name="Error message display duration" classname="System Performance and Timing Constraints" time="0.002">
     <failure message="Display.display() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:436)
+	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:415)
 	at ✽.the system displays an error message(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:19)
 ]]></failure>
     <system-out><![CDATA[
@@ -557,7 +932,7 @@ Scenario: Error message display duration                         &amp#27;[90m# s
   &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mthe system displays an error message&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.the_system_displays_an_error_message()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:436)
+	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:415)
 	at ✽.the system displays an error message(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:19)
 &amp#27;[0m
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe message should remain visible for at least &amp#27;[0m&amp#27;[36m&amp#27;[1m30&amp#27;[0m&amp#27;[36m seconds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_message_should_remain_visible_for_at_least_seconds(java.lang.Integer)&amp#27;[0m
@@ -566,9 +941,9 @@ Scenario: Error message display duration                         &amp#27;[90m# s
   <testcase name="Bank server response timeout" classname="System Performance and Timing Constraints" time="0.002">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction(StepDefinitions.java:448)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction(StepDefinitions.java:427)
 	at ✽.I have initiated a transaction (e.g., withdrawal)(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:26)
 ]]></failure>
     <system-out><![CDATA[
@@ -577,9 +952,9 @@ Scenario: Bank server response timeout                                          
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI have initiated a transaction (e.g., withdrawal)&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction(StepDefinitions.java:448)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_initiated_a_transaction(StepDefinitions.java:427)
 	at ✽.I have initiated a transaction (e.g., withdrawal)(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:26)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe bank computer does not respond within &amp#27;[0m&amp#27;[36m&amp#27;[1m120&amp#27;[0m&amp#27;[36m seconds&amp#27;[0m                     &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_does_not_respond_within_seconds(java.lang.Integer)&amp#27;[0m
@@ -588,12 +963,12 @@ Scenario: Bank server response timeout                                          
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"System unavailable, please try again later"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Cash dispensing synchronization" classname="System Performance and Timing Constraints" time="0.003">
+  <testcase name="Cash dispensing synchronization" classname="System Performance and Timing Constraints" time="0.002">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal(StepDefinitions.java:472)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal(StepDefinitions.java:451)
 	at ✽.I have requested a cash withdrawal(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:35)
 ]]></failure>
     <system-out><![CDATA[
@@ -602,9 +977,9 @@ Scenario: Cash dispensing synchronization             &amp#27;[90m# src/test/res
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI have requested a cash withdrawal&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal(StepDefinitions.java:472)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_cash_withdrawal(StepDefinitions.java:451)
 	at ✽.I have requested a cash withdrawal(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:35)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mthe bank computer authorizes the transaction&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_computer_authorizes_the_transaction()&amp#27;[0m
@@ -614,10 +989,10 @@ Scenario: Cash dispensing synchronization             &amp#27;[90m# src/test/res
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM must strictly NOT dispense any cash&amp#27;[0m    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_must_strictly_not_dispense_any_cash()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Concurrent transaction handling" classname="System Performance and Timing Constraints" time="0.002">
+  <testcase name="Concurrent transaction handling" classname="System Performance and Timing Constraints" time="0.003">
     <failure message="DatabaseProxy.checkTheBalance() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(StepDefinitions.java:512)
+	at com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(StepDefinitions.java:491)
 	at ✽.specific bank account "12345" has balance 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:45)
 ]]></failure>
     <system-out><![CDATA[
@@ -626,7 +1001,7 @@ Scenario: Concurrent transaction handling                                     &a
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mspecific bank account &amp#27;[0m&amp#27;[31m&amp#27;[1m"12345"&amp#27;[0m&amp#27;[31m has balance &amp#27;[0m&amp#27;[31m&amp#27;[1m1000.00&amp#27;[0m                     &amp#27;[90m# com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(java.lang.String,java.lang.Double)&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(StepDefinitions.java:512)
+	at com.bankbankatm.StepDefinitions.specific_bank_account_has_balance(StepDefinitions.java:491)
 	at ✽.specific bank account "12345" has balance 1000.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/performance.feature:45)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mTransaction A requests withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m800.00&amp#27;[0m&amp#27;[36m from ATM 1&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.transaction_a_requests_withdrawal_from_atm_1(java.lang.Double)&amp#27;[0m
@@ -637,12 +1012,171 @@ Scenario: Concurrent transaction handling                                     &a
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe final account balance should be correctly updated&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_final_account_balance_should_be_correctly_updated()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Transaction Atomicity on Power Failure" classname="System Reliability and Hardware Safety" time="0.004">
+  <testcase name="Print receipt after successful withdrawal (FR14)" classname="Receipt Printing" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(StepDefinitions.java:862)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @withdrawal
+Scenario: Print receipt after successful withdrawal (FR14) &amp#27;[90m# src/test/resources/features/receipt.feature:14&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m      &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should print a receipt&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_print_a_receipt()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt should contain:&amp#27;[0m                          &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_should_contain(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Field            | Value              |
+    | Transaction Type | Withdrawal         |
+    | Amount           | 200.00             |
+    | Date/Time        | current timestamp  |
+    | Card Serial      | card serial number |
+    | New Balance      | 800.00             |
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe card should be ejected&amp#27;[0m                           &amp#27;[90m# com.bankbankatm.StepDefinitions.the_card_should_be_ejected()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Print receipt after successful deposit" classname="Receipt Printing" time="0.002">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @deposit
+Scenario: Print receipt after successful deposit      &amp#27;[90m# src/test/resources/features/receipt.feature:28&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a deposit of &amp#27;[0m&amp#27;[36m&amp#27;[1m500.00&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_deposit_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should print a receipt&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_print_a_receipt()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt should contain:&amp#27;[0m                     &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_should_contain(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Field            | Value             |
+    | Transaction Type | Deposit           |
+    | Amount           | 500.00            |
+    | Date/Time        | current timestamp |
+]]></system-out>
+  </testcase>
+  <testcase name="Print receipt after successful transfer" classname="Receipt Printing" time="0.002">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @transfer
+Scenario: Print receipt after successful transfer              &amp#27;[90m# src/test/resources/features/receipt.feature:38&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m          &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m                       &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a transfer of &amp#27;[0m&amp#27;[36m&amp#27;[1m300.00&amp#27;[0m&amp#27;[36m to account &amp#27;[0m&amp#27;[36m&amp#27;[1m"9876543210"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_transfer_of_to_account(java.lang.Double,java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should print a receipt&amp#27;[0m                          &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_print_a_receipt()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt should contain:&amp#27;[0m                              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_should_contain(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | Field            | Value             |
+    | Transaction Type | Transfer          |
+    | Amount           | 300.00            |
+    | Target Account   | 9876543210        |
+    | Date/Time        | current timestamp |
+]]></system-out>
+  </testcase>
+  <testcase name="Print receipt after balance inquiry" classname="Receipt Printing" time="0.002">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @inquiry
+Scenario: Print receipt after balance inquiry         &amp#27;[90m# src/test/resources/features/receipt.feature:49&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI request a balance inquiry&amp#27;[0m                    &amp#27;[90m# com.bankbankatm.StepDefinitions.i_request_a_balance_inquiry()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI choose to print the balance&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_choose_to_print_the_balance()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe ATM should print a receipt&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_print_a_receipt()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt should contain the current balance&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_should_contain_current_balance()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Handle receipt printer error" classname="Receipt Printing" time="0.002">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @printer_error
+Scenario: Handle receipt printer error                      &amp#27;[90m# src/test/resources/features/receipt.feature:56&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m                    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mthe receipt printer has a paper jam&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_has_paper_jam()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m100.00&amp#27;[0m                    &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe transaction should still complete successfully&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_transaction_should_still_complete_successfully()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Receipt could not be printed"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe cash should still be dispensed&amp#27;[0m                    &amp#27;[90m# com.bankbankatm.StepDefinitions.the_cash_should_still_be_dispensed()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Customer opts out of receipt" classname="Receipt Printing" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+]]></failure>
+    <system-out><![CDATA[
+@receipt @optional
+Scenario: Customer opts out of receipt                &amp#27;[90m# src/test/resources/features/receipt.feature:64&amp#27;[0m
+  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/receipt.feature:10)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt printer is operational&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_printer_is_operational()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI complete a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m200.00&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.i_complete_a_withdrawal_of(java.lang.Double)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI choose not to print a receipt&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.i_choose_not_to_print_a_receipt()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mno receipt should be printed&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.no_receipt_should_be_printed()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe transaction should complete normally&amp#27;[0m        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_transaction_should_complete_normally()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Transaction Atomicity on Power Failure" classname="System Reliability and Hardware Safety" time="0.003">
+    <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(StepDefinitions.java:841)
 	at ✽.I have requested a withdrawal of 100.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:9)
 ]]></failure>
     <system-out><![CDATA[
@@ -651,9 +1185,9 @@ Scenario: Transaction Atomicity on Power Failure                  &amp#27;[90m# 
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI have requested a withdrawal of &amp#27;[0m&amp#27;[31m&amp#27;[1m100.00&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(java.lang.Double)&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
-	at com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(StepDefinitions.java:862)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
+	at com.bankbankatm.StepDefinitions.i_have_requested_a_withdrawal_of_for_reliability(StepDefinitions.java:841)
 	at ✽.I have requested a withdrawal of 100.00(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:9)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe system has debited my account&amp#27;[0m                           &amp#27;[90m# com.bankbankatm.StepDefinitions.the_system_has_debited_my_account()&amp#27;[0m
@@ -664,10 +1198,10 @@ Scenario: Transaction Atomicity on Power Failure                  &amp#27;[90m# 
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mno cash should be dispensed&amp#27;[0m                                 &amp#27;[90m# com.bankbankatm.StepDefinitions.no_cash_should_be_dispensed()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Data Isolation" classname="System Reliability and Hardware Safety" time="0.003">
+  <testcase name="Data Isolation" classname="System Reliability and Hardware Safety" time="0.002">
     <failure message="DatabaseProxy.checkTheBalance() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:922)
+	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:901)
 	at ✽.two transactions act on the same account simultaneously(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:19)
 ]]></failure>
     <system-out><![CDATA[
@@ -676,7 +1210,7 @@ Scenario: Data Isolation                                           &amp#27;[90m#
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mtwo transactions act on the same account simultaneously&amp#27;[0m    &amp#27;[90m# com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:922)
+	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:901)
 	at ✽.two transactions act on the same account simultaneously(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:19)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mone transaction is in progress (reading balance)&amp#27;[0m            &amp#27;[90m# com.bankbankatm.StepDefinitions.one_transaction_is_in_progress_reading_balance()&amp#27;[0m
@@ -687,7 +1221,7 @@ Scenario: Data Isolation                                           &amp#27;[90m#
   <testcase name="Cash Denomination Recognition" classname="System Reliability and Hardware Safety" time="0.002">
     <failure message="CashDispenser not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: CashDispenser not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:960)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:939)
 	at ✽.the cash dispenser is loaded with mixed bills(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:27)
 ]]></failure>
     <system-out><![CDATA[
@@ -696,7 +1230,7 @@ Scenario: Cash Denomination Recognition                                      &am
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe cash dispenser is loaded with mixed bills&amp#27;[0m                        &amp#27;[90m# com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: CashDispenser not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:960)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:939)
 	at ✽.the cash dispenser is loaded with mixed bills(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:27)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI request a withdrawal of &amp#27;[0m&amp#27;[36m&amp#27;[1m100.00&amp#27;[0m                                      &amp#27;[90m# com.bankbankatm.StepDefinitions.i_request_a_withdrawal_of(java.lang.Double)&amp#27;[0m
@@ -704,10 +1238,10 @@ Scenario: Cash Denomination Recognition                                      &am
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mif identification fails, it should not dispense incorrect amounts&amp#27;[0m      &amp#27;[90m# com.bankbankatm.StepDefinitions.if_identification_fails_should_not_dispense_incorrect_amounts()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Hardware Retry Logic (3 attempts)" classname="System Reliability and Hardware Safety" time="0.002">
+  <testcase name="Hardware Retry Logic (3 attempts)" classname="System Reliability and Hardware Safety" time="0.003">
     <failure message="CashDispenser not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: CashDispenser not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error(StepDefinitions.java:979)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error(StepDefinitions.java:958)
 	at ✽.the cash dispenser encounters a mechanical error during operation(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:34)
 ]]></failure>
     <system-out><![CDATA[
@@ -716,7 +1250,7 @@ Scenario: Hardware Retry Logic (3 attempts)                                &amp#
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mthe cash dispenser encounters a mechanical error during operation&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: CashDispenser not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error(StepDefinitions.java:979)
+	at com.bankbankatm.StepDefinitions.the_cash_dispenser_encounters_mechanical_error(StepDefinitions.java:958)
 	at ✽.the cash dispenser encounters a mechanical error during operation(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/reliability.feature:34)
 &amp#27;[0m
   &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mit attempts the operation for the 1st time and fails&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.it_attempts_operation_1st_time_and_fails()&amp#27;[0m
@@ -732,8 +1266,8 @@ Scenario: Hardware Retry Logic (3 attempts)                                &amp#
   <testcase name="Successful money transfer to valid account" classname="Money Transfer" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -742,8 +1276,8 @@ Scenario: Successful money transfer to valid account  &amp#27;[90m# src/test/res
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 2000.00&amp#27;[0m
@@ -756,11 +1290,11 @@ Scenario: Successful money transfer to valid account  &amp#27;[90m# src/test/res
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a "Transfer Successful" message&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Transfer amount exceeds account balance" classname="Money Transfer" time="0.002">
+  <testcase name="Transfer amount exceeds account balance" classname="Money Transfer" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -769,8 +1303,8 @@ Scenario: Transfer amount exceeds account balance        &amp#27;[90m# src/test/
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m    &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 2000.00&amp#27;[0m
@@ -781,11 +1315,11 @@ Scenario: Transfer amount exceeds account balance        &amp#27;[90m# src/test/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Insufficient funds"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Transfer to invalid or non-existent account" classname="Money Transfer" time="0.003">
+  <testcase name="Transfer to invalid or non-existent account" classname="Money Transfer" time="0.002">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -794,8 +1328,8 @@ Scenario: Transfer to invalid or non-existent account        &amp#27;[90m# src/t
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m        &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/transfer.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 2000.00&amp#27;[0m
@@ -810,8 +1344,8 @@ Scenario: Transfer to invalid or non-existent account        &amp#27;[90m# src/t
   <testcase name="Successful cash withdrawal" classname="Cash Withdrawal" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -820,8 +1354,8 @@ Scenario: Successful cash withdrawal                                 &amp#27;[90
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -838,11 +1372,11 @@ Scenario: Successful cash withdrawal                                 &amp#27;[90
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe system should print a receipt with the transaction details&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Withdrawal amount exceeds account balance" classname="Cash Withdrawal" time="0.003">
+  <testcase name="Withdrawal amount exceeds account balance" classname="Cash Withdrawal" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -851,8 +1385,8 @@ Scenario: Withdrawal amount exceeds account balance           &amp#27;[90m# src/
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -867,11 +1401,11 @@ Scenario: Withdrawal amount exceeds account balance           &amp#27;[90m# src/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance should remain 1000.00&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Withdrawal amount exceeds per-transaction limit" classname="Cash Withdrawal" time="0.002">
+  <testcase name="Withdrawal amount exceeds per-transaction limit" classname="Cash Withdrawal" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -880,8 +1414,8 @@ Scenario: Withdrawal amount exceeds per-transaction limit                  &amp#
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
@@ -895,11 +1429,11 @@ Scenario: Withdrawal amount exceeds per-transaction limit                  &amp#
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should be prompted to enter a smaller amount&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Withdrawal amount exceeds daily limit" classname="Cash Withdrawal" time="0.003">
+  <testcase name="Withdrawal amount exceeds daily limit" classname="Cash Withdrawal" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 ]]></failure>
     <system-out><![CDATA[
@@ -908,8 +1442,8 @@ Scenario: Withdrawal amount exceeds daily limit                      &amp#27;[90
   &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mI am successfully logged in with a valid card&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card()&amp#27;[0m
       &amp#27;[31mjava.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
-	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:74)
-	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:176)
+	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
+	at com.bankbankatm.StepDefinitions.i_am_successfully_logged_in_with_a_valid_card(StepDefinitions.java:155)
 	at ✽.I am successfully logged in with a valid card(file:///Users/bakiceltik/Documents/GitHub/bankbankatm/src/test/resources/features/withdraw.feature:7)
 &amp#27;[0m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy account balance is 1000.00&amp#27;[0m
