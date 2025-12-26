@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bankbankatm.RunCucumberTest" time="0.516" tests="57" errors="0" skipped="0" failures="57">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bankbankatm.RunCucumberTest" time="0.539" tests="57" errors="0" skipped="0" failures="57">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.26/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225182054397_3.jar /Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire 2025-12-25T18-20-54_361-jvmRun1 surefire-20251225182054397_1tmp surefire_0-20251225182054397_2tmp"/>
+    <property name="sun.java.command" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225192203062_3.jar /Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire 2025-12-25T19-22-03_027-jvmRun1 surefire-20251225192203062_1tmp surefire_0-20251225192203062_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/test-classes:/Users/bakiceltik/Documents/GitHub/bankbankatm/target/classes:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/bakiceltik/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/bakiceltik/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/bakiceltik/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bakiceltik/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/Users/bakiceltik/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/bakiceltik/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225182054397_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/bakiceltik/Documents/GitHub/bankbankatm/target/surefire/surefirebooter-20251225192203062_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.26+0"/>
@@ -62,7 +62,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Successful login with valid card and PIN" classname="ATM Authentication" time="0.061">
+  <testcase name="Successful login with valid card and PIN" classname="ATM Authentication" time="0.059">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -90,7 +90,7 @@ Scenario: Successful login with valid card and PIN               &amp#27;[90m# s
     | Change Password |
 ]]></system-out>
   </testcase>
-  <testcase name="PIN entry timeout" classname="ATM Authentication" time="0.006">
+  <testcase name="PIN entry timeout" classname="ATM Authentication" time="0.007">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -112,7 +112,7 @@ Scenario: PIN entry timeout                                      &amp#27;[90m# s
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Time limit exceeded"&amp#27;[0m               &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Login with invalid card (expired or unreadable)" classname="ATM Authentication" time="0.006">
+  <testcase name="Login with invalid card (expired or unreadable)" classname="ATM Authentication" time="0.007">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -133,7 +133,7 @@ Scenario: Login with invalid card (expired or unreadable)        &amp#27;[90m# s
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Card invalid or unreadable"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Login with incorrect PIN" classname="ATM Authentication" time="0.005">
+  <testcase name="Login with incorrect PIN" classname="ATM Authentication" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -155,7 +155,7 @@ Scenario: Login with incorrect PIN                                   &amp#27;[90
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should be prompted to re-enter my PIN&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Account lockout after 3 incorrect PIN attempts" classname="ATM Authentication" time="0.004">
+  <testcase name="Account lockout after 3 incorrect PIN attempts" classname="ATM Authentication" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -199,7 +199,7 @@ Scenario: Card from unsupported bank                                 &amp#27;[90
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Bank not supported by this ATM"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Card with account problems" classname="ATM Authentication" time="0.003">
+  <testcase name="Card with account problems" classname="ATM Authentication" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -222,7 +222,7 @@ Scenario: Card with account problems                                            
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Account problem. Please contact your bank."&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Bank processes transaction and updates daily limit (Bank FR7)" classname="Bank Computer Integration" time="0.004">
+  <testcase name="Bank processes transaction and updates daily limit (Bank FR7)" classname="Bank Computer Integration" time="0.007">
     <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
@@ -272,7 +272,7 @@ Scenario: Bank rejects transaction exceeding daily limit (Bank FR9) &amp#27;[90m
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see error "Daily withdrawal limit exceeded"&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Bank updates account after money dispensed (Bank FR8)" classname="Bank Computer Integration" time="0.003">
+  <testcase name="Bank updates account after money dispensed (Bank FR8)" classname="Bank Computer Integration" time="0.007">
     <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
@@ -296,7 +296,7 @@ Scenario: Bank updates account after money dispensed (Bank FR8)        &amp#27;[
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe bank should create a new account record&amp#27;[0m                      &amp#27;[90m# com.bankbankatm.StepDefinitions.the_bank_should_create_new_account_record()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM confirms cash dispensed to bank" classname="Bank Computer Integration" time="0.004">
+  <testcase name="ATM confirms cash dispensed to bank" classname="Bank Computer Integration" time="0.005">
     <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
@@ -319,7 +319,7 @@ Scenario: ATM confirms cash dispensed to bank                 &amp#27;[90m# src/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe account should reflect the new balance&amp#27;[0m              &amp#27;[90m# com.bankbankatm.StepDefinitions.the_account_should_reflect_new_balance()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM reports dispense failure to bank" classname="Bank Computer Integration" time="0.003">
+  <testcase name="ATM reports dispense failure to bank" classname="Bank Computer Integration" time="0.004">
     <failure message="NetworkToBank.openConnection() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: NetworkToBank.openConnection() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_is_connected_to_bank_network(StepDefinitions.java:1211)
@@ -368,7 +368,7 @@ Scenario: Successfully change PIN                            &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a "Password Changed Successfully" message&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Change PIN with incorrect old PIN" classname="Change Password" time="0.007">
+  <testcase name="Change PIN with incorrect old PIN" classname="Change Password" time="0.006">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -393,7 +393,7 @@ Scenario: Change PIN with incorrect old PIN             &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy PIN should remain "1234"&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="New PIN confirmation mismatch" classname="Change Password" time="0.004">
+  <testcase name="New PIN confirmation mismatch" classname="Change Password" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -420,7 +420,7 @@ Scenario: New PIN confirmation mismatch                 &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mmy PIN should remain "1234"&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Successful cash deposit" classname="Cash Deposit" time="0.006">
+  <testcase name="Successful cash deposit" classname="Cash Deposit" time="0.007">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -449,7 +449,7 @@ Scenario: Successful cash deposit                                &amp#27;[90m# s
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe system should print a receipt with the deposit details&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Deposit with invalid currency or unrecognized bills" classname="Cash Deposit" time="0.004">
+  <testcase name="Deposit with invalid currency or unrecognized bills" classname="Cash Deposit" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -477,7 +477,7 @@ Scenario: Deposit with invalid currency or unrecognized bills &amp#27;[90m# src/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Some items were rejected"&amp#27;[0m       &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="User cancels deposit transaction" classname="Cash Deposit" time="0.003">
+  <testcase name="User cancels deposit transaction" classname="Cash Deposit" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -527,7 +527,7 @@ Scenario: ATM initialization with parameters                 &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe ATM should be ready to accept cards&amp#27;[0m                &amp#27;[90m# com.bankbankatm.StepDefinitions.the_atm_should_be_ready_to_accept_cards()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM rejects card when cash below minimum threshold" classname="ATM Initialization and Configuration" time="0.003">
+  <testcase name="ATM rejects card when cash below minimum threshold" classname="ATM Initialization and Configuration" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_minimum_cash_threshold_n_is(StepDefinitions.java:726)
@@ -548,7 +548,7 @@ Scenario: ATM rejects card when cash below minimum threshold &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"ATM out of service"&amp#27;[0m     &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM displays welcome screen when idle" classname="ATM Initialization and Configuration" time="0.003">
+  <testcase name="ATM displays welcome screen when idle" classname="ATM Initialization and Configuration" time="0.004">
     <failure message="Display.display() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_should_display_the_welcome_screen(StepDefinitions.java:756)
@@ -610,7 +610,7 @@ Scenario: Card serial number is logged on insertion            &amp#27;[90m# src
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log entry should include timestamp&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_entry_should_include_timestamp()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Each step must be completed within 60 seconds" classname="ATM Initialization and Configuration" time="0.003">
+  <testcase name="Each step must be completed within 60 seconds" classname="ATM Initialization and Configuration" time="0.004">
     <failure message="ATM.readAccountNum() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.readAccountNum() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.i_insert_a_valid_card_with_serial(StepDefinitions.java:64)
@@ -635,7 +635,7 @@ Scenario: Each step must be completed within 60 seconds                  &amp#27
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Session timeout - card retained"&amp#27;[0m           &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Check account balance" classname="Account Inquiry" time="0.003">
+  <testcase name="Check account balance" classname="Account Inquiry" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -659,7 +659,7 @@ Scenario: Check account balance                         &amp#27;[90m# src/test/r
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see the available balance for withdrawal&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="View recent transactions" classname="Account Inquiry" time="0.003">
+  <testcase name="View recent transactions" classname="Account Inquiry" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -706,7 +706,7 @@ Scenario: Log card serial number on insertion (FR6)            &amp#27;[90m# src
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log entry should contain a timestamp&amp#27;[0m                 &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_entry_should_contain_a_timestamp()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Log dispensed amount with serial number (FR15)" classname="Transaction Logging" time="0.003">
+  <testcase name="Log dispensed amount with serial number (FR15)" classname="Transaction Logging" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -758,7 +758,7 @@ Scenario: Complete transaction logging cycle                   &amp#27;[90m# src
     | Status           | success/failure    |
 ]]></system-out>
   </testcase>
-  <testcase name="Log failed transaction attempts" classname="Transaction Logging" time="0.003">
+  <testcase name="Log failed transaction attempts" classname="Transaction Logging" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -782,7 +782,7 @@ Scenario: Log failed transaction attempts                      &amp#27;[90m# src
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe log should contain the reason &amp#27;[0m&amp#27;[36m&amp#27;[1m"Insufficient funds"&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_log_should_contain_reason(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM available 24 hours a day (4.4.1)" classname="ATM Maintainability and Availability" time="0.003">
+  <testcase name="ATM available 24 hours a day (4.4.1)" classname="ATM Maintainability and Availability" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.i_check_system_status_at_any_time(StepDefinitions.java:1423)
@@ -802,7 +802,7 @@ Scenario: ATM available 24 hours a day (4.4.1)      &amp#27;[90m# src/test/resou
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mall core services should be available&amp#27;[0m         &amp#27;[90m# com.bankbankatm.StepDefinitions.all_core_services_should_be_available()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="All ATM services available" classname="ATM Maintainability and Availability" time="0.003">
+  <testcase name="All ATM services available" classname="ATM Maintainability and Availability" time="0.004">
     <failure message="ATM services not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM services not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_following_services_should_be_available(StepDefinitions.java:1455)
@@ -868,7 +868,7 @@ Scenario: Maintainer successfully connects new ATM         &amp#27;[90m# src/tes
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe connection should be logged with maintainer ID&amp#27;[0m   &amp#27;[90m# com.bankbankatm.StepDefinitions.connection_should_be_logged_with_maintainer_id()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="ATM self-diagnostics" classname="ATM Maintainability and Availability" time="0.003">
+  <testcase name="ATM self-diagnostics" classname="ATM Maintainability and Availability" time="0.002">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_runs_startup_diagnostics(StepDefinitions.java:1538)
@@ -919,7 +919,7 @@ Scenario: Session timeout due to user inactivity  &amp#27;[90m# src/test/resourc
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see a message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Session timed out"&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_a_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Error message display duration" classname="System Performance and Timing Constraints" time="0.002">
+  <testcase name="Error message display duration" classname="System Performance and Timing Constraints" time="0.003">
     <failure message="Display.display() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Display.display() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_system_displays_an_error_message(StepDefinitions.java:415)
@@ -938,7 +938,7 @@ Scenario: Error message display duration                         &amp#27;[90m# s
   &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe message should remain visible for at least &amp#27;[0m&amp#27;[36m&amp#27;[1m30&amp#27;[0m&amp#27;[36m seconds&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.the_message_should_remain_visible_for_at_least_seconds(java.lang.Integer)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Bank server response timeout" classname="System Performance and Timing Constraints" time="0.002">
+  <testcase name="Bank server response timeout" classname="System Performance and Timing Constraints" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -963,7 +963,7 @@ Scenario: Bank server response timeout                                          
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"System unavailable, please try again later"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Cash dispensing synchronization" classname="System Performance and Timing Constraints" time="0.002">
+  <testcase name="Cash dispensing synchronization" classname="System Performance and Timing Constraints" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1012,7 +1012,7 @@ Scenario: Concurrent transaction handling                                     &a
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe final account balance should be correctly updated&amp#27;[0m                   &amp#27;[90m# com.bankbankatm.StepDefinitions.the_final_account_balance_should_be_correctly_updated()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Print receipt after successful withdrawal (FR14)" classname="Receipt Printing" time="0.004">
+  <testcase name="Print receipt after successful withdrawal (FR14)" classname="Receipt Printing" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1043,7 +1043,7 @@ Scenario: Print receipt after successful withdrawal (FR14) &amp#27;[90m# src/tes
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe card should be ejected&amp#27;[0m                           &amp#27;[90m# com.bankbankatm.StepDefinitions.the_card_should_be_ejected()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Print receipt after successful deposit" classname="Receipt Printing" time="0.002">
+  <testcase name="Print receipt after successful deposit" classname="Receipt Printing" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1122,7 +1122,7 @@ Scenario: Print receipt after balance inquiry         &amp#27;[90m# src/test/res
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe receipt should contain the current balance&amp#27;[0m  &amp#27;[90m# com.bankbankatm.StepDefinitions.the_receipt_should_contain_current_balance()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Handle receipt printer error" classname="Receipt Printing" time="0.002">
+  <testcase name="Handle receipt printer error" classname="Receipt Printing" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1198,7 +1198,7 @@ Scenario: Transaction Atomicity on Power Failure                  &amp#27;[90m# 
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mno cash should be dispensed&amp#27;[0m                                 &amp#27;[90m# com.bankbankatm.StepDefinitions.no_cash_should_be_dispensed()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Data Isolation" classname="System Reliability and Hardware Safety" time="0.002">
+  <testcase name="Data Isolation" classname="System Reliability and Hardware Safety" time="0.003">
     <failure message="DatabaseProxy.checkTheBalance() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: DatabaseProxy.checkTheBalance() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.two_transactions_act_on_same_account_simultaneously(StepDefinitions.java:901)
@@ -1218,7 +1218,7 @@ Scenario: Data Isolation                                           &amp#27;[90m#
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mneither transaction should see an intermediate invalid state&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.neither_transaction_should_see_intermediate_invalid_state()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Cash Denomination Recognition" classname="System Reliability and Hardware Safety" time="0.002">
+  <testcase name="Cash Denomination Recognition" classname="System Reliability and Hardware Safety" time="0.003">
     <failure message="CashDispenser not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: CashDispenser not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_cash_dispenser_is_loaded_with_mixed_bills(StepDefinitions.java:939)
@@ -1263,7 +1263,7 @@ Scenario: Hardware Retry Logic (3 attempts)                                &amp#
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe transaction should be cancelled&amp#27;[0m                                  &amp#27;[90m# com.bankbankatm.StepDefinitions.and_the_transaction_should_be_cancelled()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Successful money transfer to valid account" classname="Money Transfer" time="0.004">
+  <testcase name="Successful money transfer to valid account" classname="Money Transfer" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1315,7 +1315,7 @@ Scenario: Transfer amount exceeds account balance        &amp#27;[90m# src/test/
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see an error message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Insufficient funds"&amp#27;[0m &amp#27;[90m# com.bankbankatm.StepDefinitions.i_should_see_an_error_message(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Transfer to invalid or non-existent account" classname="Money Transfer" time="0.002">
+  <testcase name="Transfer to invalid or non-existent account" classname="Money Transfer" time="0.004">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1341,7 +1341,7 @@ Scenario: Transfer to invalid or non-existent account        &amp#27;[90m# src/t
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe transfer should not be processed&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Successful cash withdrawal" classname="Cash Withdrawal" time="0.003">
+  <testcase name="Successful cash withdrawal" classname="Cash Withdrawal" time="0.005">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
@@ -1429,7 +1429,7 @@ Scenario: Withdrawal amount exceeds per-transaction limit                  &amp#
   &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should be prompted to enter a smaller amount&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Withdrawal amount exceeds daily limit" classname="Cash Withdrawal" time="0.004">
+  <testcase name="Withdrawal amount exceeds daily limit" classname="Cash Withdrawal" time="0.003">
     <failure message="ATM.checkAvailabilityOfCashInATM() not implemented" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ATM.checkAvailabilityOfCashInATM() not implemented
 	at org.junit.Assert.fail(Assert.java:89)
 	at com.bankbankatm.StepDefinitions.the_atm_system_is_initialized_and_has_sufficient_funds(StepDefinitions.java:53)
